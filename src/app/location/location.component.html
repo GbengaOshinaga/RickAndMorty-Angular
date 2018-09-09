@@ -1,0 +1,11 @@
+<div *ngIf="location">
+  <h2>Location</h2>
+  <mat-card class="card">
+    <mat-card-title>{{location.name}}</mat-card-title>
+    <mat-card-content>
+      <p>Type: {{location.type}}</p>
+      <p>Dimension: {{location.dimension}}</p>
+      <p>Number of Residents: {{location.residents.length}}</p>
+    </mat-card-content>
+  </mat-card>
+</div>
