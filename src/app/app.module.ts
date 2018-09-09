@@ -6,18 +6,22 @@ import { MatCardModule, MatGridListModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { CharactersComponent } from './characters/characters.component';
+import { AppRoutingModule } from './/app-routing.module';
+import { LocationComponent } from './location/location.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CharactersComponent
+    CharactersComponent,
+    LocationComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     BrowserAnimationsModule,
     MatCardModule,
-    MatGridListModule
+    MatGridListModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
